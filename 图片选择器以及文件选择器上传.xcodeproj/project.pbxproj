@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA4FC04D7AF72642E0E09044 /* libPods-图片选择器以及文件选择器上传.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 724C063A3E7F7B464533A208 /* libPods-图片选择器以及文件选择器上传.a */; };
+		F4615F4920315B9B0012BAE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F4820315B9B0012BAE7 /* AppDelegate.m */; };
+		F4615F4F20315B9B0012BAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4615F4D20315B9B0012BAE7 /* Main.storyboard */; };
+		F4615F5120315B9B0012BAE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4615F5020315B9B0012BAE7 /* Assets.xcassets */; };
+		F4615F5420315B9B0012BAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4615F5220315B9B0012BAE7 /* LaunchScreen.storyboard */; };
+		F4615F5720315B9B0012BAE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F5620315B9B0012BAE7 /* main.m */; };
+		F4615F5F20315FA80012BAE7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F5E20315FA80012BAE7 /* MainViewController.m */; };
+		F4615F62203176B20012BAE7 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F61203176B20012BAE7 /* PreviewViewController.m */; };
+		F4615F66203178700012BAE7 /* UIApplication+LJApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F65203178700012BAE7 /* UIApplication+LJApplication.m */; };
+		F4615F6920318CDD0012BAE7 /* SelectFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F6820318CDD0012BAE7 /* SelectFileViewController.m */; };
+		F4615F6C203190C00012BAE7 /* SelectedFileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F6B203190C00012BAE7 /* SelectedFileCollectionViewCell.m */; };
+		F4615F7020319A690012BAE7 /* NSString+LJString.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F6F20319A690012BAE7 /* NSString+LJString.m */; };
+		F4898063203275FB008C85A1 /* SelectedFileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4898062203275FB008C85A1 /* SelectedFileCollectionViewCell.xib */; };
+		F4898066203281F9008C85A1 /* AnimatedAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F4898065203281F9008C85A1 /* AnimatedAlert.m */; };
+		F4A1E23C2043BD2100D9315C /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A1E23A2043BD2100D9315C /* ImageCollectionViewCell.m */; };
+		F4A1E23D2043BD2100D9315C /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A1E23B2043BD2100D9315C /* ImageCollectionViewCell.xib */; };
+		F4A1E2412043E70E00D9315C /* ImageAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A1E23F2043E70E00D9315C /* ImageAddCollectionViewCell.m */; };
+		F4A1E2422043E70E00D9315C /* ImageAddCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A1E2402043E70E00D9315C /* ImageAddCollectionViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		724C063A3E7F7B464533A208 /* libPods-图片选择器以及文件选择器上传.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-图片选择器以及文件选择器上传.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F7A1867B9B7C71FEBFD36B /* Pods-图片选择器以及文件选择器上传.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-图片选择器以及文件选择器上传.debug.xcconfig"; path = "Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传.debug.xcconfig"; sourceTree = "<group>"; };
+		E9ADA1E9A675B85BF41040B0 /* Pods-图片选择器以及文件选择器上传.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-图片选择器以及文件选择器上传.release.xcconfig"; path = "Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传.release.xcconfig"; sourceTree = "<group>"; };
+		F4615F4420315B9B0012BAE7 /* 图片选择器以及文件选择器上传.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图片选择器以及文件选择器上传.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4615F4720315B9B0012BAE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F4615F4820315B9B0012BAE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F4615F4E20315B9B0012BAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4615F5020315B9B0012BAE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4615F5320315B9B0012BAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4615F5520315B9B0012BAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4615F5620315B9B0012BAE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4615F5D20315FA80012BAE7 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F4615F5E20315FA80012BAE7 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F4615F60203176B20012BAE7 /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		F4615F61203176B20012BAE7 /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		F4615F64203178700012BAE7 /* UIApplication+LJApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LJApplication.h"; sourceTree = "<group>"; };
+		F4615F65203178700012BAE7 /* UIApplication+LJApplication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LJApplication.m"; sourceTree = "<group>"; };
+		F4615F6720318CDD0012BAE7 /* SelectFileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectFileViewController.h; sourceTree = "<group>"; };
+		F4615F6820318CDD0012BAE7 /* SelectFileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectFileViewController.m; sourceTree = "<group>"; };
+		F4615F6A203190C00012BAE7 /* SelectedFileCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedFileCollectionViewCell.h; sourceTree = "<group>"; };
+		F4615F6B203190C00012BAE7 /* SelectedFileCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedFileCollectionViewCell.m; sourceTree = "<group>"; };
+		F4615F6D2031926F0012BAE7 /* Headerfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headerfile.h; sourceTree = "<group>"; };
+		F4615F6E20319A690012BAE7 /* NSString+LJString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+LJString.h"; sourceTree = "<group>"; };
+		F4615F6F20319A690012BAE7 /* NSString+LJString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+LJString.m"; sourceTree = "<group>"; };
+		F4898062203275FB008C85A1 /* SelectedFileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedFileCollectionViewCell.xib; sourceTree = "<group>"; };
+		F4898064203281F9008C85A1 /* AnimatedAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedAlert.h; sourceTree = "<group>"; };
+		F4898065203281F9008C85A1 /* AnimatedAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedAlert.m; sourceTree = "<group>"; };
+		F4A1E2392043BD2100D9315C /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		F4A1E23A2043BD2100D9315C /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		F4A1E23B2043BD2100D9315C /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		F4A1E23E2043E70E00D9315C /* ImageAddCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageAddCollectionViewCell.h; sourceTree = "<group>"; };
+		F4A1E23F2043E70E00D9315C /* ImageAddCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageAddCollectionViewCell.m; sourceTree = "<group>"; };
+		F4A1E2402043E70E00D9315C /* ImageAddCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageAddCollectionViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4615F4120315B9B0012BAE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4FC04D7AF72642E0E09044 /* libPods-图片选择器以及文件选择器上传.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6A1EE5EBBE29710C071BE40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724C063A3E7F7B464533A208 /* libPods-图片选择器以及文件选择器上传.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF853ADE0CDED1CC237C495C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92F7A1867B9B7C71FEBFD36B /* Pods-图片选择器以及文件选择器上传.debug.xcconfig */,
+				E9ADA1E9A675B85BF41040B0 /* Pods-图片选择器以及文件选择器上传.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F4615F3B20315B9B0012BAE7 = {
+			isa = PBXGroup;
+			children = (
+				F4615F4620315B9B0012BAE7 /* 图片选择器以及文件选择器上传 */,
+				F4615F4520315B9B0012BAE7 /* Products */,
+				EF853ADE0CDED1CC237C495C /* Pods */,
+				D6A1EE5EBBE29710C071BE40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4615F4520315B9B0012BAE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4615F4420315B9B0012BAE7 /* 图片选择器以及文件选择器上传.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4615F4620315B9B0012BAE7 /* 图片选择器以及文件选择器上传 */ = {
+			isa = PBXGroup;
+			children = (
+				F4615F4720315B9B0012BAE7 /* AppDelegate.h */,
+				F4615F4820315B9B0012BAE7 /* AppDelegate.m */,
+				F4615F5D20315FA80012BAE7 /* MainViewController.h */,
+				F4615F5E20315FA80012BAE7 /* MainViewController.m */,
+				F4A1E2392043BD2100D9315C /* ImageCollectionViewCell.h */,
+				F4A1E23A2043BD2100D9315C /* ImageCollectionViewCell.m */,
+				F4A1E23B2043BD2100D9315C /* ImageCollectionViewCell.xib */,
+				F4A1E23E2043E70E00D9315C /* ImageAddCollectionViewCell.h */,
+				F4A1E23F2043E70E00D9315C /* ImageAddCollectionViewCell.m */,
+				F4A1E2402043E70E00D9315C /* ImageAddCollectionViewCell.xib */,
+				F4615F6720318CDD0012BAE7 /* SelectFileViewController.h */,
+				F4615F6820318CDD0012BAE7 /* SelectFileViewController.m */,
+				F4615F6A203190C00012BAE7 /* SelectedFileCollectionViewCell.h */,
+				F4615F6B203190C00012BAE7 /* SelectedFileCollectionViewCell.m */,
+				F4898062203275FB008C85A1 /* SelectedFileCollectionViewCell.xib */,
+				F4615F60203176B20012BAE7 /* PreviewViewController.h */,
+				F4615F61203176B20012BAE7 /* PreviewViewController.m */,
+				F4898064203281F9008C85A1 /* AnimatedAlert.h */,
+				F4898065203281F9008C85A1 /* AnimatedAlert.m */,
+				F4615F64203178700012BAE7 /* UIApplication+LJApplication.h */,
+				F4615F65203178700012BAE7 /* UIApplication+LJApplication.m */,
+				F4615F6E20319A690012BAE7 /* NSString+LJString.h */,
+				F4615F6F20319A690012BAE7 /* NSString+LJString.m */,
+				F4615F6D2031926F0012BAE7 /* Headerfile.h */,
+				F4615F4D20315B9B0012BAE7 /* Main.storyboard */,
+				F4615F5020315B9B0012BAE7 /* Assets.xcassets */,
+				F4615F5220315B9B0012BAE7 /* LaunchScreen.storyboard */,
+				F4615F5520315B9B0012BAE7 /* Info.plist */,
+				F4615F5620315B9B0012BAE7 /* main.m */,
+			);
+			path = "图片选择器以及文件选择器上传";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4615F4320315B9B0012BAE7 /* 图片选择器以及文件选择器上传 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4615F5A20315B9B0012BAE7 /* Build configuration list for PBXNativeTarget "图片选择器以及文件选择器上传" */;
+			buildPhases = (
+				2EFA41009FB81FA7BDD64633 /* [CP] Check Pods Manifest.lock */,
+				F4615F4020315B9B0012BAE7 /* Sources */,
+				F4615F4120315B9B0012BAE7 /* Frameworks */,
+				F4615F4220315B9B0012BAE7 /* Resources */,
+				6F8858E25D28FB917A3A62AB /* [CP] Embed Pods Frameworks */,
+				7DE369BE4AB39778955C6EAD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "图片选择器以及文件选择器上传";
+			productName = "图片选择器以及文件选择器上传";
+			productReference = F4615F4420315B9B0012BAE7 /* 图片选择器以及文件选择器上传.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4615F3C20315B9B0012BAE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "李骏";
+				TargetAttributes = {
+					F4615F4320315B9B0012BAE7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F4615F3F20315B9B0012BAE7 /* Build configuration list for PBXProject "图片选择器以及文件选择器上传" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4615F3B20315B9B0012BAE7;
+			productRefGroup = F4615F4520315B9B0012BAE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4615F4320315B9B0012BAE7 /* 图片选择器以及文件选择器上传 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4615F4220315B9B0012BAE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A1E2422043E70E00D9315C /* ImageAddCollectionViewCell.xib in Resources */,
+				F4615F5420315B9B0012BAE7 /* LaunchScreen.storyboard in Resources */,
+				F4615F5120315B9B0012BAE7 /* Assets.xcassets in Resources */,
+				F4615F4F20315B9B0012BAE7 /* Main.storyboard in Resources */,
+				F4898063203275FB008C85A1 /* SelectedFileCollectionViewCell.xib in Resources */,
+				F4A1E23D2043BD2100D9315C /* ImageCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EFA41009FB81FA7BDD64633 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-图片选择器以及文件选择器上传-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F8858E25D28FB917A3A62AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE369BE4AB39778955C6EAD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-resources.sh",
+				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoActionSheet.xib",
+				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowserCell.xib",
+				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowser.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4615F4020315B9B0012BAE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4615F5720315B9B0012BAE7 /* main.m in Sources */,
+				F4615F66203178700012BAE7 /* UIApplication+LJApplication.m in Sources */,
+				F4A1E23C2043BD2100D9315C /* ImageCollectionViewCell.m in Sources */,
+				F4615F5F20315FA80012BAE7 /* MainViewController.m in Sources */,
+				F4615F4920315B9B0012BAE7 /* AppDelegate.m in Sources */,
+				F4615F6920318CDD0012BAE7 /* SelectFileViewController.m in Sources */,
+				F4615F6C203190C00012BAE7 /* SelectedFileCollectionViewCell.m in Sources */,
+				F4A1E2412043E70E00D9315C /* ImageAddCollectionViewCell.m in Sources */,
+				F4615F7020319A690012BAE7 /* NSString+LJString.m in Sources */,
+				F4615F62203176B20012BAE7 /* PreviewViewController.m in Sources */,
+				F4898066203281F9008C85A1 /* AnimatedAlert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4615F4D20315B9B0012BAE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4615F4E20315B9B0012BAE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4615F5220315B9B0012BAE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4615F5320315B9B0012BAE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4615F5820315B9B0012BAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4615F5920315B9B0012BAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4615F5B20315B9B0012BAE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F7A1867B9B7C71FEBFD36B /* Pods-图片选择器以及文件选择器上传.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CH6JWDEEK;
+				INFOPLIST_FILE = "图片选择器以及文件选择器上传/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gasq.--------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4615F5C20315B9B0012BAE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9ADA1E9A675B85BF41040B0 /* Pods-图片选择器以及文件选择器上传.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CH6JWDEEK;
+				INFOPLIST_FILE = "图片选择器以及文件选择器上传/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "gasq.--------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4615F3F20315B9B0012BAE7 /* Build configuration list for PBXProject "图片选择器以及文件选择器上传" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4615F5820315B9B0012BAE7 /* Debug */,
+				F4615F5920315B9B0012BAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4615F5A20315B9B0012BAE7 /* Build configuration list for PBXNativeTarget "图片选择器以及文件选择器上传" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4615F5B20315B9B0012BAE7 /* Debug */,
+				F4615F5C20315B9B0012BAE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4615F3C20315B9B0012BAE7 /* Project object */;
+}

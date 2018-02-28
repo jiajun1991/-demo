@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ArialRoundedMTBold.ttf">
+            <string>ArialRoundedMTBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="rHi-Dz-4yQ" customClass="SelectedFileCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="26h-qA-0m9">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unselectedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Qvr-0N-7Dg">
+                        <rect key="frame" x="109" y="6" width="26" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="V4M-Ke-jkt"/>
+                            <constraint firstAttribute="height" constant="27" id="rvs-Ub-SaP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjI-VF-4z2">
+                        <rect key="frame" x="8" y="93" width="128" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="42" id="jPv-Eu-9jU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.77193052029999998" green="0.22503532670000001" blue="0.27621333219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zjI-VF-4z2" secondAttribute="bottom" constant="9" id="07Z-DB-WxA"/>
+                <constraint firstItem="26h-qA-0m9" firstAttribute="leading" secondItem="rHi-Dz-4yQ" secondAttribute="leading" id="09z-24-Red"/>
+                <constraint firstAttribute="bottom" secondItem="26h-qA-0m9" secondAttribute="bottom" id="5k9-Rr-R0g"/>
+                <constraint firstItem="26h-qA-0m9" firstAttribute="top" secondItem="rHi-Dz-4yQ" secondAttribute="top" id="91X-J8-pVX"/>
+                <constraint firstItem="zjI-VF-4z2" firstAttribute="leading" secondItem="rHi-Dz-4yQ" secondAttribute="leading" constant="8" id="BEk-El-oDD"/>
+                <constraint firstAttribute="trailing" secondItem="26h-qA-0m9" secondAttribute="trailing" id="NId-pA-VQ4"/>
+                <constraint firstAttribute="trailing" secondItem="zjI-VF-4z2" secondAttribute="trailing" constant="8" id="ooH-rA-ELb"/>
+                <constraint firstAttribute="trailing" secondItem="Qvr-0N-7Dg" secondAttribute="trailing" constant="9" id="w59-ss-toK"/>
+                <constraint firstItem="Qvr-0N-7Dg" firstAttribute="top" secondItem="rHi-Dz-4yQ" secondAttribute="top" constant="6" id="zA7-04-LOc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="a8y-FC-QIS"/>
+            <size key="customSize" width="144" height="144"/>
+            <connections>
+                <outlet property="backIV" destination="26h-qA-0m9" id="5ZZ-fC-8Ax"/>
+                <outlet property="fileNameLbl" destination="zjI-VF-4z2" id="65Z-Jy-5gM"/>
+                <outlet property="selectIV" destination="Qvr-0N-7Dg" id="uuB-Mq-XQz"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="unselectedIcon" width="24" height="24"/>
+    </resources>
+</document>
