@@ -1,0 +1,6 @@
+framework module Pods_______________ {
+  umbrella header "Pods-图片选择器以及文件选择器上传-umbrella.h"
+
+  export *
+  module * { export * }
+}

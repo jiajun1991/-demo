@@ -1,17 +1,18 @@
 PODS:
-  - SDWebImage (4.3.0):
-    - SDWebImage/Core (= 4.3.0)
-  - SDWebImage/Core (4.3.0)
-  - ZLPhotoBrowser (2.6.4):
-    - SDWebImage
+  - ZLPhotoBrowser (4.0.9):
+    - ZLPhotoBrowser/Core (= 4.0.9)
+  - ZLPhotoBrowser/Core (4.0.9)
 
 DEPENDENCIES:
-  - ZLPhotoBrowser
+  - ZLPhotoBrowser (~> 4.0.9)
+
+SPEC REPOS:
+  trunk:
+    - ZLPhotoBrowser
 
 SPEC CHECKSUMS:
-  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
-  ZLPhotoBrowser: 2125e7b7ea328c959a5ead1204c83b3bb0f0bf5a
+  ZLPhotoBrowser: d5dbc47fa9fa6679c67b35e57dfc4fcfc7a7eee4
 
-PODFILE CHECKSUM: 77e1f195b6ff99eb777d60e8b8e102a23b88a02e
+PODFILE CHECKSUM: ca097f78bbd749f7538d5be1f253d1c7ff9c6f07
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.9.3

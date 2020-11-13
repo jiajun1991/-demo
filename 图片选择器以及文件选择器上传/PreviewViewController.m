@@ -8,8 +8,9 @@
 
 #import "PreviewViewController.h"
 #import <WebKit/WKWebView.h>
-@interface PreviewViewController ()
-@property (strong, nonatomic)UIWebView *webView;
+@interface PreviewViewController ()<UIDocumentInteractionControllerDelegate>
+@property (strong, nonatomic) UIWebView *webView;
+@property (strong, nonatomic) UIDocumentInteractionController *documentController;
 @end
 
 @implementation PreviewViewController
@@ -27,8 +28,22 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:self.url];
     [self.webView loadRequest:request];
 }
+
 - (IBAction)closeBtn:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)shareOtherAppAction:(id)sender {
+    NSLog(@"调用UIDocumentInteractionController分享给其他app");
+    self.documentController = [UIDocumentInteractionController interactionControllerWithURL:self.url];
+    BOOL canOpen = [self.documentController presentOpenInMenuFromRect:self.view.bounds inView:self.view animated:YES];
+    if (!canOpen) {
+        NSLog(@"没有程序可以打开选中的文件");
+    }
+}
+
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller{
+    return self;
 }
 
 - (void)didReceiveMemoryWarning {

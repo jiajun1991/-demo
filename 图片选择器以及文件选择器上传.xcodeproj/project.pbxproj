@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA4FC04D7AF72642E0E09044 /* libPods-图片选择器以及文件选择器上传.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 724C063A3E7F7B464533A208 /* libPods-图片选择器以及文件选择器上传.a */; };
 		F4615F4920315B9B0012BAE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4615F4820315B9B0012BAE7 /* AppDelegate.m */; };
 		F4615F4F20315B9B0012BAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4615F4D20315B9B0012BAE7 /* Main.storyboard */; };
 		F4615F5120315B9B0012BAE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4615F5020315B9B0012BAE7 /* Assets.xcassets */; };
@@ -28,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		724C063A3E7F7B464533A208 /* libPods-图片选择器以及文件选择器上传.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-图片选择器以及文件选择器上传.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F7A1867B9B7C71FEBFD36B /* Pods-图片选择器以及文件选择器上传.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-图片选择器以及文件选择器上传.debug.xcconfig"; path = "Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传.debug.xcconfig"; sourceTree = "<group>"; };
 		E9ADA1E9A675B85BF41040B0 /* Pods-图片选择器以及文件选择器上传.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-图片选择器以及文件选择器上传.release.xcconfig"; path = "Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传.release.xcconfig"; sourceTree = "<group>"; };
 		F4615F4420315B9B0012BAE7 /* 图片选择器以及文件选择器上传.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "图片选择器以及文件选择器上传.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA4FC04D7AF72642E0E09044 /* libPods-图片选择器以及文件选择器上传.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +75,6 @@
 		D6A1EE5EBBE29710C071BE40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				724C063A3E7F7B464533A208 /* libPods-图片选择器以及文件选择器上传.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,7 +154,6 @@
 				F4615F4120315B9B0012BAE7 /* Frameworks */,
 				F4615F4220315B9B0012BAE7 /* Resources */,
 				6F8858E25D28FB917A3A62AB /* [CP] Embed Pods Frameworks */,
-				7DE369BE4AB39778955C6EAD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,33 +238,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ZLPhotoBrowser/ZLPhotoBrowser.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLPhotoBrowser.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7DE369BE4AB39778955C6EAD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-resources.sh",
-				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoActionSheet.xib",
-				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowserCell.xib",
-				"${PODS_ROOT}/ZLPhotoBrowser/PhotoBrowser/resource/ZLPhotoBrowser.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-图片选择器以及文件选择器上传/Pods-图片选择器以及文件选择器上传-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

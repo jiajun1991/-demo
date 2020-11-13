@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 #import "SelectFileViewController.h"
-#import <ZLPhotoActionSheet.h>
+#import <ZLPhotoBrowser/ZLPhotoBrowser-Swift.h>
 #import "ImageCollectionViewCell.h"
 #import "ImageAddCollectionViewCell.h"
 @interface MainViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -37,16 +37,15 @@
 }
 - (IBAction)selectPhotoDidClick:(id)sender {
     __weak typeof(self)weakSelf = self;
-    ZLPhotoActionSheet *ac = [[ZLPhotoActionSheet alloc]init];
-    //相册参数设置,configuration有默认值，可直接使用并对其属性进行修改
-    ac.configuration.maxSelectCount = 9;
-    ac.configuration.maxPreviewCount = 0;
-    ac.sender = self;
-    [ac setSelectImageBlock:^(NSArray<UIImage *> * _Nullable images, NSArray<PHAsset *> * _Nonnull assets, BOOL isOriginal) {
+    [ZLPhotoConfiguration default].allowSelectVideo = NO;
+    [ZLPhotoConfiguration default].themeColorDeploy.thumbnailBgColor = UIColor.blackColor;
+    ZLPhotoPreviewSheet *ps = [[ZLPhotoPreviewSheet alloc]initWithSelectedAssets:@[]];
+    ps.selectImageBlock = ^(NSArray<UIImage *> * _Nonnull images, NSArray<PHAsset *> * _Nonnull assets, BOOL isOriginal) {
         [weakSelf.imageArray addObjectsFromArray:images];
         [weakSelf.fileCV reloadData];
-    }];
-    [ac showPreviewAnimated:YES];
+    };
+    [ps showPreviewWithAnimate:YES sender:self];
+    
 }
 - (IBAction)selectFileDidClick:(id)sender {
     SelectFileViewController *selectVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"selectFileVCID"];
@@ -82,19 +81,12 @@
 {
     if (indexPath.row == self.imageArray.count) {
         __weak typeof(self)weakSelf = self;
-        ZLPhotoActionSheet *ac = [[ZLPhotoActionSheet alloc]init];
-        //相册参数设置,configuration有默认值，可直接使用并对其属性进行修改
-        ac.configuration.maxSelectCount = 9;
-        ac.configuration.maxPreviewCount = 0;
-        ac.configuration.navBarColor = [[UIColor alloc]initWithRed:236/255.0 green:67/255.0 blue:62/255.0 alpha:1];
-        ac.configuration.navTitleColor = [UIColor whiteColor];
-        ac.configuration.bottomViewBgColor = [UIColor colorWithRed:236/255.0 green:67/255.0 blue:62/255.0 alpha:1];
-        ac.sender = self;
-        [ac setSelectImageBlock:^(NSArray<UIImage *> * _Nullable images, NSArray<PHAsset *> * _Nonnull assets, BOOL isOriginal) {
+        ZLPhotoPreviewSheet *ps = [[ZLPhotoPreviewSheet alloc]initWithSelectedAssets:@[]];
+        ps.selectImageBlock = ^(NSArray<UIImage *> * _Nonnull images, NSArray<PHAsset *> * _Nonnull assets, BOOL isOriginal) {
             [weakSelf.imageArray addObjectsFromArray:images];
             [weakSelf.fileCV reloadData];
-        }];
-        [ac showPreviewAnimated:YES];
+        };
+        [ps showPreviewWithAnimate:YES sender:self];
     }
 }
 - (NSMutableArray *)imageArray
